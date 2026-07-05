@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="shortcut icon" href="./netfavicon.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url(./backgroundimg.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            position: relative;
+        }
+
+        .Overelay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.65);
+        }
+
+        header {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 150px;
+        }
+
+        .logo {
+            width: 170px;
+            border-radius: 50px;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 15px;
+        }
+
+        .lang {
+            padding: 8px 15px;
+            background: transparent;
+            border: 1px solid #888;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .signin {
+            background: #e50914;
+            border: none;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .hero {
+            position: relative;
+            z-index: 2;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            font-weight: 900;
+            line-height: 1.1;
+        }
+
+        .hero h3 {
+            margin-top: 20px;
+            font-size: 28px;
+        }
+
+        .hero p {
+            margin-top: 25px;
+            font-size: 20px;
+        }
+
+        .email-box {
+            margin-top: 25px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .email-box input {
+            width: 400px;
+            padding: 18px;
+            font-size: 18px;
+            border: 1px solid gray;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 4px;
+        }
+
+        .email-box button {
+            background: #e50914;
+            color: white;
+            border: none;
+            padding: 18px 35px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        @media(max-width:768px) {
+
+            header {
+                padding: 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .email-box {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .email-box input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Overelay"></div>
+    <header>
+        <img src="./logonetflix.jpg" class="logo">
+        <div class="header-right">
+            <button class="lang">English ▼</button>
+            <button class="signin">Sign In</button>
+        </div>
+    </header>
+    <div class="hero">
+        <h1>Unlimited movies,<br>shows, and more</h1>
+        <h3>Starts at ₹149. Cancel at any time.</h3>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="email-box">
+            <input type="email" placeholder="Email address">
+            <button>Get Started ></button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
